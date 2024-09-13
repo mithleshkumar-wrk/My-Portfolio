@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body
+    class="bg-gradient-to-br from-red-900 via-[#002d49] to-[#6b0071] box-border m-0 p-0 scroll-smooth overflow-x-hidden">
+
+    <!-- Headear  -->
+    <header>
+        <div>
+            <nav
+                class="flex flex-row justify-between   items-center px-6  py-5 p-0 m-0 box-border   shadow-lg fixed top-0 left-0 right-0  w-full z-20 bg-[#002d49]">
+
+                <div class=" flex items-center text-white lg:pl-16 hover:text-[#f7ff14]">
+                    <i class="fa-solid fa-magnet rotate-180  text-2xl  "></i>
+                    <i class="fa-solid fa-magnet rotate-180   text-2xl     -translate-x-1"></i>
+
+                </div>
+
+                <div
+                    class=" hidden md:flex  md:flex-row  justify-end items-center gap-12 text-lg  px-16  text-[16px] text-white  w-full ">
+
+                    <a class="nav-link  hover:text-[#f7ff14]  focus:text-[#f7ff14]" href="#home">Home</a>
+                    <a class="nav-link hover:text-[#f7ff14]  focus:text-[#f7ff14]" href="#about">About</a>
+                    <a class="nav-link hover:text-[#f7ff14]  focus:text-[#f7ff14]" href="#skills">Skills</a>
+                    <a class="nav-link hover:text-[#f7ff14]  focus:text-[#f7ff14]" href="#project">Project</a>
+                    <a class="nav-link hover:text-[#f7ff14]  focus:text-[#f7ff14] " href="#contact">Contact
+                    </a>
+
+                </div>
+
+
+                <button onclick="navHandler()"
+                    class="md:hidden flex items-center w-full justify-end   text-xl text-white"><i
+                        class="fa-solid fa-bars"></i></button>
+            </nav>
+
+
+        </div>
+
+        <div id="nav-menu" class="inset-0 fixed bg-[#002d49] z-20  hidden   ">
+            <nav>
+                <div
+                    class="flex flex-row justify-between   items-center px-6  py-5   fixed top-0 left-0 right-0 w-full shadow-lg">
+
+                    <div class=" flex items-center text-white">
+                        <i class="fa-solid fa-magnet rotate-180  text-2xl  "></i>
+                        <i class="fa-solid fa-magnet rotate-180   text-2xl     -translate-x-1"></i>
+                    </div>
+
+                    <div id="nav-menu" onclick="navHandler()"
+                        class=" flex items-center w-full justify-end text-white  text-2xl"><i
+                            class="fa-solid fa-xmark"></i></div>
+                </div>
+
+                <div onclick="menuOption();" class="mt-16 flex flex-col px-4 py-4 gap-4 text-white">
+
+                    <a class=" hover:bg-[#014169]  rounded-md px-3 py-3 transition flex flex-row gap-4 items-center focus:text-[#efefb2] nav-link"
+                        href="#home">
+                        <i class="fa-solid fa-house"></i>
+                        Home</a>
+
+
+
+                    <a class="hover:bg-[#014169] rounded-md px-3 py-3 transition flex flex-row gap-4 items-center focus:text-[#efefb2] nav-link"
+                        href="#about">
+                        <i class="fa-regular fa-address-card"></i>
+                        About</a>
+
+                    <a class="hover:bg-[#014169] rounded-md px-3 py-3 transition flex flex-row gap-4 items-center focus:text-[#efefb2] nav-link"
+                        href="#skills">
+                        <i class="fa-solid fa-file"></i>
+                        Skills</a>
+
+                    <a class="hover:bg-[#014169] rounded-md px-3 py-3 transition flex flex-row gap-4 items-center focus:text-[#efefb2] nav-link"
+                        href="#project">
+                        <i class="fa-solid fa-bars-progress"></i>
+                        Project</a>
+
+
+
+                    <a class="hover:bg-[#014169] rounded-md px-3 py-3 transition flex flex-row gap-4 items-center focus:text-[#efefb2] nav-link"
+                        href="#contact">
+                        <i class="fa-solid fa-address-book"></i>
+                        Contact</a>
+                </div>
+                <div class="h-[1px]  bg-gray-300 mx-4 mt-4">
+
+                </div>
+            </nav>
+
+
+        </div>
+    </header>
+
+    <!-- main  -->
+
+    <main class=" md:px-20 pt-8 transition-transform duration-500">
+        <!-- Home section  -->
+        <section id="home" class="home pt-10 md:pt-20">
+
+            <div class="home flex flex-col   md:flex-row-reverse px-4 md:justify-between gap-4 ">
+
+                <div class="flex justify-center items-start  lg:w-1/2 mt-6 md:mt-16 ">
+                    <img src="images/img 1.jpg" class="w-60 rounded-full md:w-80 border-2 border-[#069aa7] shadow-lg">
+                </div>
+
+                <div class="flex flex-col gap-1 md:w-1/2 mt-6 ">
+                    <div class="pb-4">
+                        <p class="text-[#ffff1b] w-fit md:text-xl">HELLO</p>
+                    </div>
+                    <div class="">
+                        <p class="text-2xl  text-white">I'm <span
+                                class="text-4xl lg:text-[40px] text-[#efefb2] font-semibold">Mithlesh Kumar</span>
+                            a Web Developer
+                        </p>
+                    </div>
+                    <div class="mt-4 lg:text-lg flex flex-col gap-4 items-center">
+                        <p class="text-[#39b3db]">Hello, Welcome to My Portfolio! I'm Mithlesh Kumar a passionate<span
+                                class="text-[#fff]"> Web
+                                Developer </span>with a love for creating clean and responsive website. My goal is to
+                            bring innovative ideas to life and deliver exceptional results.</p>
+
+                        <p class="text-[#d6d4bd] items-center">
+                            "I specialize in front-end development and I’m committed to delivering high-quality work
+                            that not only meets but exceeds expectations."
+
+                        </p>
+
+                        <p class="text-[#39b3db] items-center">"Feel free to explore my work, and if you like what you
+                            see, let’s
+                            connect! I’m always open to new opportunities and collaborations."</p>
+
+                    </div>
+
+                    <div>
+
+                        <button
+                            class=" p-2 mt-8 border border-[#efe587] text-[#000000] rounded-full w-full md:w-fit text-lg md:px-8 font-semibold bg-[#15c8ff] transition duration-300  hover:bg-[#10a4d1] "><a
+                                class="p-2 " href="#contact">Contact Us</a>
+                        </button>
+
+                    </div>
+
+                    <div class=" justify-center flex flex-row md:justify-start mt-12 md:flex md:flex-row gap-6 text-lg">
+
+                        <a class="bg-[#0077B5] hover:bg-[#008dd9] w-[35px] h-[35px] flex justify-center items-center text-[#fff]  rounded-full "
+                            href="https://www.linkedin.com/in/mithleshji2021/" target="__blank"><i
+                                class="fa-brands fa-linkedin-in  "></i></a>
+
+                        <a class="bg-[#000] hover:bg-[#1a3037] w-[35px] h-[35px] flex justify-center items-center text-white  rounded-full text-2xl"
+                            href="https://github.com/mithleshji2021" target="__blank"><i
+                                class="fa-brands fa-github"></i></a>
+
+                        <a class="bg-[#000] hover:bg-[#21343a] w-[35px] h-[35px] flex justify-center items-center text-[#fff]  rounded-full"
+                            href="https://x.com/mithleshji_" target="__blank"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a class="bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:bg-[#000] w-[35px] h-[35px] text-[20px] flex justify-center items-center text-[#fff]  rounded-full"
+                            href="https://www.instagram.com/mithleshji_/" target="__blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- About section  -->
+        <section id="about" class="pt-20 md:pt-28 ">
+
+            <div class="md:mb-20 mb-2 flex justify-center">
+                <p class="md:text-5xl  text-4xl text-[#d6d4bd] font-semibold ">About me</p>
+            </div>
+
+            <div class="flex flex-col md:flex-row ">
+                <div class="flex flex-col justify-start items-center  pt-6  md:w-1/2 ">
+
+                    <div
+                        class="flex justify-center items-center bg-gradient-to-br from-yellow-300 via-red-500 to-blue-600 w-60 md:w-80 rounded-full md:rounded-lg p-[1px] hover:bg-gradient-to-br hover:from-yellow-500 hover:via-red-800 hover:to-green-500 ">
+
+                        <img class="object-contain w-60 md:w-80 rounded-full md:rounded-lg " src="images/img 2.jpg"
+                            alt="">
+
+                    </div>
+
+                    <div class=" mt-8  flex justify-center items-center ">
+                        <a class=" bg-gradient-to-br from-red-200 via-blue-300 to-green-300  text-center w-full py-2 rounded-full md:rounded-lg mx-4 px-10 md:px-24 whitespace-nowrap text-xl font-semibold hover:bg-gradient-to-br hover:from-red-300 hover:via-blue-400 hover:to-green-400 "
+                            target="_blank" href="mithlesh-CV.pdf">Download CV</a>
+                    </div>
+
+                </div>
+
+                <div class="md:w-1/2 text-white ">
+                    <p class="px-4 py-6 md:py-0 text-lg md:text-xl"><span class="text-[#efefb2]"> Hello! I’m Mithlesh
+                            Kumar</span>, a dedicated Frontend Developer with one year of experience. <span
+                            class="text-[#39b3db]"> My expertise lies in HTML, CSS, JavaScript, React, TailwindCSS,
+                            Bootstrap, Git, GitHub , Advanced Excel & Powerpoint.</span> <br><br>
+
+                        <span
+                            class="text-[#0ae68e] hover:text-[#39b3db]   rounded-lg px-1 underline-offset-4 underline">I
+                            completed my Senior Secondary Education with the Haryana Board</span> <span
+                            class="text-[#efefb2]">and have been passionate about the tech industry ever since.
+                            Currently, I am pursuing my studies to further enhance my skills as a Frontend Developer.
+                        </span><br> <br>
+                        <span class="text-[#39b3db]">When I’m not coding, I enjoy playing cricket and listening to
+                            music, which keeps me
+                            inspired and motivated.
+                            <span
+                                class="text-[#0ae68e]  hover:text-[#efefb2] underline-offset-4 underline rounded-lg px-1">Feel
+                                free to reach out to me at mithleshji2021@gmail.com or connect with me on Instagram
+                                @mithleshji_.</span>
+                            I’m always excited to connect with fellow tech enthusiasts and explore new
+                            opportunities.
+                        </span>
+
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+
+        <!-- skill section  -->
+
+        <section id="skills" class="pt-20 md:pt-28 flex flex-col justify-center items-center ">
+
+            <div class="md:mb-16 sm:mb-8 lg:mb-20 mb-2 flex justify-center">
+                <p class="md:text-5xl  text-4xl text-[#d6d4bd] font-semibold ">My Skills</p>
+            </div>
+
+            <div
+                class="grid grid-cols-2 sm:grid-cols-3 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-3 lg:grid-row-2 lg:grid-cols-6 justify-evenly justify-items-center items-center gap-y-8 gap-x-12 px-14 pt-8 md:py-0 lg:w-[60rem]  sm:gap-x-12 md:gap-x-16    ">
+                <div class="flex flex-col justify-center items-center w-fit gap-2 ">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#f06529] transition duration-500 border-[#f06529] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i class="fa-brands fa-html5 text-4xl md:text-5xl group-hover:text-[#fff] text-[#f06529]"></i>
+                    </div>
+                    <p class="text-[#f06529]">HTML</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#2965f1] transition duration-500 border-[#2965f1] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i
+                            class="fa-brands fa-css3-alt text-4xl md:text-5xl group-hover:text-[#fff] text-[#2965f1]"></i>
+                    </div>
+                    <p class="text-[#2965f1]">CSS</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#f0db4f] transition duration-500 border-[#f0db4f] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i class="fa-brands fa-js text-4xl md:text-5xl group-hover:text-[#fff] text-[#f0db4f]"></i>
+
+                    </div>
+                    <p class="text-[#f0db4f]">JavaScript</p>
+                </div>
+
+
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#66d6ff] transition duration-500 border-[#66d6ff] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i class="fa-brands fa-react text-4xl md:text-5xl group-hover:text-[#000] text-[#66d6ff]"></i>
+
+
+                    </div>
+                    <p class="text-[#66d6ff]">React</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#fff] transition duration-500 border-[#06b6d4] hover:border-[#06b6d4] rounded-lg flex justify-center items-center cursor-pointer">
+                        <img src="images/tailwindcss-logo.png" class="h-12 w-12 object-contain">
+
+                    </div>
+                    <p class="text-[#06b6d4]">TailwindCSS</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#6628c3] transition duration-500 border-[#6628c3] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i
+                            class="fa-brands fa-bootstrap text-4xl md:text-5xl group-hover:text-[#fff] text-[#6628c3]"></i>
+
+
+                    </div>
+                    <p class="text-[#6628c3]">Bootstrap</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#ecb7a1] transition duration-500 border-[#ecb7a1] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <img src="images/my-sql-logo.png" class="h-14 w-14 md:w-16 md:h-16 object-contain">
+
+                    </div>
+                    <p class="text-[#ecb7a1]">MySql</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#F1502F] transition duration-500 border-[#F1502F] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i class="fa-brands fa-git-alt text-4xl md:text-5xl group-hover:text-[#fff] text-[#F1502F]"></i>
+
+                    </div>
+                    <p class="text-[#F1502F]">Git</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2 group">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border-2 hover:border hover:bg-[#000] transition duration-500 border-[#000] hover:border-white rounded-lg flex justify-center items-center cursor-pointer">
+                        <i class="fa-brands fa-github text-4xl md:text-5xl group-hover:text-[#fff] text-[#000]"></i>
+
+
+                    </div>
+                    <p class="text-[#000] group-hover:text-white transition duration-500">Git Hub</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#2bab07] transition duration-500 border-[#28d62d] hover:border-[#fff] rounded-lg flex justify-center items-center cursor-pointer">
+                        <img src="images/excel logo.webp" class="h-14 w-14 md:w-16 md:h-16 object-contain">
+
+                    </div>
+                    <p class="text-[#1fa723]">Excel</p>
+                </div>
+
+                <div class="flex flex-col justify-center items-center w-fit gap-2 ">
+                    <div
+                        class="w-16 group h-16 md:w-20 md:h-20 border hover:bg-[#b95c05] transition duration-500 border-[#da531a] hover:border-[#fff] rounded-lg flex justify-center items-center cursor-pointer">
+                        <img src="images/power point.png" class="h-12 w-12 md:h-14 md:w-14  object-contain">
+
+                    </div>
+                    <p class="text-[#da531a]">Powerpoint</p>
+                </div>
+
+            </div>
+
+            <p class="text-gray-300 text-sm px-4  lg:-translate-y-20 mt-8 text-center lg:px-0 lg:mt-0">I have worked on all these these
+                skills, you can see my <a class="text-xl underline underline-offset-4 text-[#dbdb18]"
+                    href="#project">projects</a></p>
+
+        </section>
+
+        <!-- Project Section  -->
+
+        <section id="project" class=" flex flex-col justify-center items-center ">
+
+            <div class="md:mb-16 sm:mb-8 lg:mb-12 mb-6 pt-24 flex justify-center">
+                <p class="md:text-5xl  text-4xl text-[#d6d4bd] font-semibold ">My Projects</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-2 justify-items-center gap-y-8 gap-x-12 bg-[#003454]  rounded-2xl mx-4 shadow-lg  lg:px-20 lg:pt-12 pb-8 lg:pb-16 sm:px-16 ">
+                
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36   rounded-lg " src="images/calculator.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Calculator</p>
+                        <a class="mx-6  mt-2  text-white bg-indigo-700 w-fit px-3 py-1 rounded-lg hover:bg-yellow-500 hover:text-white transition duration-500 " target="_blank"  href="https://mithleshji2021.github.io/Calculator/">Check now</a>
+                        
+                    </div>
+
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36   rounded-lg" src="images/to-do-list.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">To-Do-List</p>
+                        <a class="mx-6  mt-2  text-white bg-indigo-700 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-indigo-700 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/To-do-List/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/wheather-image.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Wheather</p>
+                        <a class="mx-6  mt-2  text-white bg-purple-700 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-purple-700 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/weather-application/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/quotes .jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Quotes</p>
+                        <a class="mx-6  mt-2  text-white bg-blue-700 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-blue-600 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Quotes-generator/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/shiksham-classes.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Shikham Classes</p>
+                        <a class="mx-6  mt-2  text-red-900 bg-yellow-400 w-fit px-3 py-1 rounded-lg hover:bg-red-900 hover:text-white transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Shiksham-Classes/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/to-desktop.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Clone</p>
+                        <a class="mx-6  mt-2  text-white bg-indigo-700 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-blue-600 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Landing-page-with-tailwind-css/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/rock-paper-scissors.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">R S P</p>
+                        <a class="mx-6  mt-2  text-white bg-pink-500 w-fit px-3 py-1 rounded-lg hover:bg-yellow-500 hover:text-white transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Rock-Paper-Scissors/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/tic-tac-toe.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Tic Tac Toe</p>
+                        <a class="mx-6  mt-2  text-white bg-red-600 w-fit px-3 py-1 rounded-lg hover:bg-blue-500 hover:text-white transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Tic-Tac-Toe/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/analog-clock.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Analog Clock</p>
+                        <a class="mx-6  mt-2  text-pink-500 bg-white w-fit px-3 py-1 rounded-lg hover:bg-pink-500 hover:text-white transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Clock/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/master-card.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Master Card</p>
+                        <a class="mx-6  mt-2  text-white bg-orange-400 w-fit px-3 py-1 rounded-lg hover:bg-red-600 hover:text-white transition duration-500" target="_blank" href="https://mithleshji2021.github.io/Master-Card-Design/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/profile-card.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Profile-card</p>
+                        <a class="mx-6  mt-2  text-white bg-indigo-700 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-blue-600 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/profile-card-project-with-html-css/">Check now</a>
+                        
+                    </div>
+                    <div class="flex flex-col  bg-[#003454] rounded-2xl  pt-8  hover:bg-[#003e64] transition duration-500 mx-6 sm:mx-0 shadow-2xl pb-4 px-8">
+                        <img class="h-36  rounded-lg" src="images/amazon-clone.jpg" >
+                        <p class="mx-6 pt-4  text-white uppercase">Amazon clone</p>
+                        <a class="mx-6  mt-2  text-red-700 bg-pink-300 w-fit px-3 py-1 rounded-lg hover:bg-white hover:text-blue-600 transition duration-500" target="_blank" href="https://mithleshji2021.github.io/amazon-clone-project-with-html-css/">Check now</a>
+                        
+                    </div>
+
+            </div>
+
+            
+
+            </div>
+        </section>
+
+        <!-- Contact Section  -->
+
+        <section id="contact" class="pt-20 md:pt-28 ">
+
+            <div class="md:mb-16 pl-8 mb-2 flex justify-start">
+                <p class="md:text-3xl  text-2xl text-[#d6d4bd] font-semibold ">Contact Us</p>
+            </div>
+
+            <div
+                class="flex flex-col  mx-4 px-3 py-4  md:px-16 bg-gradient-to-br from-[#003454] via-[#003454] to-[#003454] rounded-2xl text-white min-h-[30rem] mb-8 shadow-sm mt-4  ">
+
+                <div class=" w-full h-fit flex justify-center flex-col items-center gap-6 pt-6 sm:pt-12">
+
+                    <p class="text-2xl sm:text-4xl font-semibold text-center">Interested to work with us? Drop a mail
+                    </p>
+                    <p class="text-lg sm:text-2xl text-yellow-400">mithleshji2021@gmail.com</p>
+
+                </div>
+
+                <div>
+
+
+
+                    <div class="  pt-2 flex flex-row justify-around">
+
+                        <div class=" justify-center flex flex-row mt-6 md:mt-12 w-full gap-6 pb-4   sm:gap-10 text-lg">
+
+                            <a class="bg-[#0077B5] hover:bg-[#008dd9] w-[35px] h-[35px] flex justify-center items-center text-[#fff]  rounded-full "
+                                href="https://www.linkedin.com/in/mithleshji2021/" target="__blank"><i
+                                    class="fa-brands fa-linkedin-in  "></i></a>
+
+                            <a class="bg-[#000] hover:bg-[#1a3037] w-[35px] h-[35px] flex justify-center items-center text-white  rounded-full text-2xl"
+                                href="https://github.com/mithleshji2021" target="__blank"><i
+                                    class="fa-brands fa-github"></i></a>
+
+                            <a class="bg-[#000] hover:bg-[#21343a] w-[35px] h-[35px] flex justify-center items-center text-[#fff]  rounded-full"
+                                href="https://x.com/mithleshji_" target="__blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+
+                            <a class="bg-gradient-to-br from-[#f9ce34] via-[#ee2a7b] to-[#6228d7] hover:bg-[#000] w-[35px] h-[35px] text-[20px] flex justify-center items-center text-[#fff]  rounded-full"
+                                href="https://www.instagram.com/mithleshji_/" target="__blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+
+                        </div>
+
+                    </div>
+                    <p class="pt-4 md:pt-12 text-gray-400 text-center">We're here to help! If you have any questions,
+                        need
+                        assistance, or just want to say hello, feel free to reach out to us. You can contact us by email
+                        ,
+                        and we'll get back to you as soon as possible. We're happy to guide you and answer any of your
+                        questions. Don't hesitate to get in touch!</p>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

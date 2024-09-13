@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-link {
+    @apply  focus:text-[#ffff1b] active:text-[#ffff1b];
+  }
+
+  .nav-link.active {
+    @apply text-[#ffff1b] ;
+  }
